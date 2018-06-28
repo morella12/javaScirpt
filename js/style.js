@@ -65,7 +65,6 @@ document.querySelector('#adicionar-paciente').addEventListener("click", function
 	event.preventDefault();
 	// preventDefault() esse tira o evento padrão do DOM 
 
-	var form = document.querySelector('#form');
 	var elemento = [nome.value, peso, altura, gordura.value, '0'];
 	var elementos = ['','','','',''];
 	var pacienteTr = document.createElement('tr');
@@ -83,7 +82,6 @@ document.querySelector('#adicionar-paciente').addEventListener("click", function
 	 	pacienteTr.appendChild(elementos[i]);
 	}
 	document.querySelector('#tabela-pacientes').appendChild(pacienteTr);
-	console.log(pacienteTr);
 });
 
 function mostrarMensagem()
