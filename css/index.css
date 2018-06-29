@@ -138,6 +138,11 @@ tr.paciente.invalido {
     background-color: #ff414147;
 }
 /* Botões Ediçoes*/
+tr.edite{
+	border: 2px solid #0095ff !important;
+	background-color: #0095ff2e !important;
+}
+
 .editar svg{
     color: #0095ff;
 }
