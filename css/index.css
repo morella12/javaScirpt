@@ -137,3 +137,13 @@ tr.paciente.invalido {
     border: 2px solid red;
     background-color: #ff414147;
 }
+/* Botões Ediçoes*/
+.editar svg{
+    color: #0095ff;
+}
+.remover svg{
+	color: red;
+}
+.ed {
+    cursor: pointer;
+}

@@ -6,7 +6,9 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 
@@ -26,6 +28,7 @@
 							<th>Altura(m)</th>
 							<th>Gordura Corporal(%)</th>
 							<th>IMC</th>
+							<th colspan="2">Edição</th>
 						</tr>
 					</thead>
 					<tbody id="tabela-pacientes">
@@ -35,6 +38,12 @@
 							<td class="info-altura">2.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
+							<td class="editar">
+								<i class="fas fa-edit ed"></i><b class="ed"> Editar</b>
+							</td>
+							<td class="remover">
+								<i class="far fa-trash-alt ed"></i><b class="ed"> Remover</b>
+							</td>
 						</tr>
 
 						<tr class="paciente" >
@@ -43,6 +52,12 @@
 							<td class="info-altura">1.72</td>
 							<td class="info-gordura">40</td>
 							<td class="info-imc">0</td>
+							<td class="editar">
+								<i class="fas fa-edit ed"></i><b class="ed"> Editar</b>
+							</td>
+							<td class="remover">
+								<i class="far fa-trash-alt ed"></i><b class="ed"> Remover</b>
+							</td>
 						</tr>
 
 						<tr class="paciente" >
@@ -51,6 +66,12 @@
 							<td class="info-altura">1.64</td>
 							<td class="info-gordura">14</td>
 							<td class="info-imc">0</td>
+							<td class="editar">
+								<i class="fas fa-edit ed"></i><b class="ed"> Editar</b>
+							</td>
+							<td class="remover">
+								<i class="far fa-trash-alt ed"></i><b class="ed"> Remover</b>
+							</td>
 						</tr>
 
 						<tr class="paciente">
@@ -59,6 +80,12 @@
 							<td class="info-altura">1.73</td>
 							<td class="info-gordura">24</td>
 							<td class="info-imc">0</td>
+							<td class="editar">
+								<i class="fas fa-edit ed"></i><b class="ed"> Editar</b>
+							</td>
+							<td class="remover">
+								<i class="far fa-trash-alt ed"></i><b class="ed"> Remover</b>
+							</td>
 						</tr>
 						<tr class="paciente" >
 							<td class="info-nome">Tatiana</td>
@@ -66,6 +93,12 @@
 							<td class="info-altura">5.00</td>
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
+							<td class="editar">
+								<i class="fas fa-edit ed"></i><b class="ed"> Editar</b>
+							</td>
+							<td class="remover">
+								<i class="far fa-trash-alt ed"></i><b class="ed"> Remover</b>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -95,5 +128,6 @@
 		    </form>
 		</section>
 	<script src="js/style.js"></script>
+	<script src="js/remover-paciente.js"></script>
 	</body>
 </html>

@@ -57,7 +57,7 @@ for (var i = 0; i < pacientes.length; i++)
 // Fim Teceira Aula
 
 // Quarta Aula
-
+var form = document.querySelector('#form');
 document.querySelector('#adicionar-paciente').addEventListener("click", function(event)
 {
 	// Sempre que usar o event tem que ser colocado como parametro da função
@@ -81,7 +81,10 @@ document.querySelector('#adicionar-paciente').addEventListener("click", function
 	 	elementos[i].textContent = elemento[i];
 	 	pacienteTr.appendChild(elementos[i]);
 	}
+
 	document.querySelector('#tabela-pacientes').appendChild(pacienteTr);
+	// Limpar campos 
+	form.reset();
 });
 
 function mostrarMensagem()
@@ -89,4 +92,43 @@ function mostrarMensagem()
 	// Exemplo de função 
 	console.log("Olá, eu fui clicado");
 }
-// Fim Quarta Aula  
+// Fim Quarta Aula
+
+// Quinta  Aula
+// Separar em funções é uma boa pratica
+
+// Criação de um objeto são variavel que representa alguma coisa do mundo real
+function form()
+{
+	
+	var paciente =
+	{
+		nome: form.nome.value,
+		peso: form.peso.value,
+		altura: form.altura.value,
+		gordura: form.gordura.value, 
+		imc: 10
+	}
+	return paciente;
+}
+
+// Com isso eleminamos a necessidade de um array dentro do evento click
+// Fim Quinta Aula 
+
+// Sexta Aula
+// Como fazer um forEach
+// variavel.forEach(function(nomeDoItem){})
+/*elementos.forEach(function(elemento)
+{
+	// --- *****
+});*/
+// Acrecentar messagem no HTML
+document.querySelector('#titulo-form').addEventListener("click", function(event)
+{
+	document.querySelector('#form').innerHTML = "Aqui está o novo texto!";
+});
+// Fim Sexta Aula 
+
+// Setima Aula
+
+// Fim Setima Aula
